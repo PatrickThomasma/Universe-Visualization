@@ -1,0 +1,216 @@
+This is the link to my movie: https://www.youtube.com/watch?v=1PQ-9w8j_hk
+README is in my GitHub: https://github.com/PatrickThomasma/Universe-Visualization/tree/main
+I uploaded scripts I used and notes that I had to use to write stuff down
+Also uploaded a few sreenshots that will also be in my github
+
+Below are a couple of numbers and functions I had jotted down to help with the flow of my project
+
+
+
+
+Time at 7 
+imageZoom = 30.9127
+Time at 100
+imageZoom = 1.77156
+
+
+Pat = View3DAttributes()
+Pat.SetViewNormal(0.000000, 0.000000, 1.000000)
+Pat.SetFocus(-0.019531, 0.011719, -0.030273)
+Pat.SetViewUp(0.000000, 1.000000, 0.000000)
+Pat.SetNearPlane(-91251.627485)
+Pat.SetFarPlane(91251.627485)
+Pat.SetImagePan(0.000000, 0.000000)
+Pat.SetImageZoom(0.826446)
+Pat.SetParallelScale(45625.813743)
+Pat.SetPerspective(1)
+
+
+Pat = View3DAttributes()
+Pat.SetViewNormal(0.051081, 0.067154, -0.996434)
+Pat.SetFocus(-0.019531, 0.011719, -0.030273)
+Pat.SetViewUp(-0.089674, 0.994015, 0.062394)
+Pat.SetNearPlane(-91251.627485)
+Pat.SetFarPlane(91251.627485)
+Pat.SetImagePan(0.000000, 0.000000)
+Pat.SetImageZoom(0.826446)
+Pat.SetParallelScale(45625.813743)
+Pat.SetPerspective(1)
+
+
+
+Time = 8
+
+viewNormal = (-0.0036831, -0.0164006, 0.999859)
+focus = (0.0117188, 0.00585938, -0.0683594)
+viewUp = (0.000178972, 0.999865, 0.0164014)
+viewAngle = 30
+parallelScale = 78665.2
+nearPlane = -157330
+farPlane = 157330
+imagePan = (0, 0)
+imageZoom = 25.5477
+perspective = 1
+eyeAngle = 2
+centerOfRotationSet = 0
+centerOfRotation = (0.0117188, 0.00585938, -0.0683594)
+axis3DScaleFlag = 0
+axis3DScales = (1, 1, 1)
+shear = (0, 0, 1)
+windowValid = 1
+
+def fly():
+    Pat = View3DAttributes()
+    Pat.SetViewNormal(0.000000, 0.000000, 1.000000)
+    Pat.SetFocus(-0.019531, 0.011719, -0.030273)
+    Pat.SetViewUp(0.000000, 1.000000, 0.000000)
+    Pat.SetNearPlane(-91251.627485)
+    Pat.SetFarPlane(91251.627485)
+    Pat.SetImagePan(0.000000, 0.000000)
+    Pat.SetImageZoom(0.826446)
+    Pat.SetParallelScale(45625.813743)
+    Pat.SetPerspective(1)
+    Pat1 = View3DAttributes()
+    Pat1.SetViewNormal(0.997997, -0.020198, -0.059951)
+    Pat1.SetFocus(-0.019531, 0.011719, -0.030273)
+    Pat1.SetViewUp(0.023596, 0.998123, 0.056522)
+    Pat1.SetNearPlane(-91251.627485)
+    Pat1.SetFarPlane(91251.627485)
+    Pat1.SetImagePan(0.000000, 0.000000)
+    Pat1.SetImageZoom(0.826446)
+    Pat1.SetParallelScale(45625.813743)
+    Pat1.SetPerspective(1)
+    Pat2 = View3DAttributes()
+    Pat2.SetViewNormal(0.022804, 0.121275, -0.992357)
+    Pat2.SetFocus(-0.019531, 0.011719, -0.030273)
+    Pat2.SetViewUp(-0.025634, 0.992360, 0.120687)
+    Pat2.SetNearPlane(-91251.627485)
+    Pat2.SetFarPlane(91251.627485)
+    Pat2.SetImagePan(0.000000, 0.000000)
+    Pat2.SetImageZoom(0.826446)
+    Pat2.SetParallelScale(45625.813743)
+    Pat2.SetPerspective(1)
+    Pat3 = View3DAttributes()
+    Pat3.SetViewNormal(-0.989820, 0.132409, 0.052196)
+    Pat3.SetFocus(-0.019531, 0.011719, -0.030273)
+    Pat3.SetViewUp(0.133617, 0.990824, 0.020351)
+    Pat3.SetNearPlane(-91251.627485)
+    Pat3.SetFarPlane(91251.627485)
+    Pat3.SetImagePan(0.000000, 0.000000)
+    Pat3.SetImageZoom(0.826446)
+    Pat3.SetParallelScale(45625.813743)
+    Pat3.SetPerspective(1)
+    Pat4 = View3DAttributes()
+    Pat4.SetViewNormal(0.000000, 0.000000, 1.000000)
+    Pat4.SetFocus(-0.019531, 0.011719, -0.030273)
+    Pat4.SetViewUp(0.000000, 1.000000, 0.000000)
+    Pat4.SetNearPlane(-91251.627485)
+    Pat4.SetFarPlane(91251.627485)
+    Pat4.SetImagePan(0.000000, 0.000000)
+    Pat4.SetImageZoom(0.826446)
+    Pat4.SetParallelScale(45625.813743)
+    Pat4.SetPerspective(1)
+    vpts = (Pat,Pat1,Pat2,Pat3,Pat4)
+    x = []
+    nsteps = 1500
+    for i in range (5):
+        x = x + [float(i) / float(6.)]
+
+ 
+    for i in range (nsteps):
+        t = float(i) / float(nsteps - 1)
+        c = EvalCubicSpline(t, x , vpts)
+        SetView3D(c)
+
+fly()
+
+fake[6,3,1]
+
+fakevel[x] = vel[x] - fake[x] / 3
+fakevel[y] = vel[y] - fake[y] / 3 
+fakevel[z] = vel[z] - fake[z] / 3
+
+
+
+vel[10,7,5]
+
+
+
+
+x1 = 9
+y2 = 11
+z2 = 13
+
+
+def AnimateInTime():
+    Pat = View3DAttributes()
+    Pat.SetViewNormal(-0.003624, -0.017950, 0.999832)
+    Pat.SetFocus(0.011719, 0.005859, -0.068359)
+    Pat.SetViewUp(0.003926, 0.999831, 0.017965)
+    Pat.SetNearPlane(-157330.411114)
+    Pat.SetFarPlane(157330.411114)
+    Pat.SetImagePan(0.000000, 0.000000)
+    Pat.SetImageZoom(54.400400)
+    Pat.SetParallelScale(78665.205557)
+    Pat.SetPerspective(1)
+    imagezoom = 54.400400
+    for i in range(15,400):
+	if (i < 35):
+              imagezoom = imagezoom - 4.127762857
+	if (i < 64):
+	      imagezoom = imagezoom - 1.18424182759
+        if (i < 95):
+              imagezoom = imagezoom - 
+        Pat.SetImageZoom(imagezoom)
+        SetView3D(Pat)
+        SaveWindow()
+        TimeSliderSetState(i)
+
+AnimateInTime()
+
+
+Time at 18
+Pat.SetImageZoom(40.581650)
+Time at 38
+Pat.SetImageZoom(18.931639)
+Time at 58
+Pat.SetImageZoom(12.930564)
+Time at 78
+Pat.SetImageZoom(10.686417)
+Time at 98
+Pat.SetImageZoom(8.831749)
+Time at 118
+Pat.SetImageZoom(7.298966)
+Time at 138
+Pat.SetImageZoom(6.032204)
+Time at 158
+Pat.SetImageZoom(4.985292)
+Time at 178
+Pat.SetImageZoom(4.985292)
+Time at 198
+Pat.SetImageZoom(4.120076)
+Time at 218
+Pat.SetImageZoom(4.120076)
+Time at 238
+Pat.SetImageZoom(3.405022)
+Time at 258
+Pat.SetImageZoom(3.405022)
+Time at 278
+Pat.SetImageZoom(2.814068)
+Time at 298
+Pat.SetImageZoom(2.814068)
+Time at 318
+Pat.SetImageZoom(2.814068)
+Time at 338
+Pat.SetImageZoom(2.325676)
+Time at 358
+Pat.SetImageZoom(2.325676)
+Time at 378
+Pat.SetImageZoom(2.325676)
+Time at 398
+Pat.SetImageZoom(1.922046)
+
+
+
+
+ffmpeg -framerate 60 -i visit%04d.tif -crf 0 output.mp4
