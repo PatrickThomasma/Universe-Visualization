@@ -73,7 +73,8 @@ I am overall very happy with what I made and I hope that whoever watches it will
 
 ## Authors
 
-Creator and editor: Patrick Thomasma\n
+Creator and editor: Patrick Thomasma
+
 Contributors: Hank Childs, Tammas Hicks (Helped a ton with smoothing out my timelapse clip) and Melissa Milbrandt (Helped me with some of the more monotonous tasks such as the conversion script and gave me moral support through the whole project)
 
 
