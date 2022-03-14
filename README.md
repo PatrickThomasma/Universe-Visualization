@@ -71,6 +71,7 @@ I am overall very happy with what I made and I hope that whoever watches it will
 
 [Inspiration for this project](https://www.youtube.com/watch?v=1p8ADoTqggY)
 
+[Musical Inspiration](https://youtu.be/G7gE9KMNpD8?t=330)
 ## Authors
 
 Creator and editor: Patrick Thomasma
